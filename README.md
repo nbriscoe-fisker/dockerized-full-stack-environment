@@ -1,16 +1,6 @@
 # Dockerized Full-Stack Environment
 
-## Introduction
-
-This tutorial will teach you how to setup a dockerized environment that with a single command can run:
-
-- a MySQL database server (and create and populate a database in it in the first run)
-- a back-end using the NestJS framework with a simple API
-- a front-end using the NextJS framework that calls the back-end API
-
 ## Folder structure
-
-You can see the most important files and it's locations in the diagram below. Some files were hidden to make it easier to understand.
 
 ```
 📦dockerized-full-stack-environment
@@ -40,7 +30,7 @@ You can see the most important files and it's locations in the diagram below. So
  ┗ 📜package.json
  ```
 
-## Install Docker Desktop
+## Install Docker Desktop
 
 - <https://docs.docker.com/desktop/install/windows-install/>
 - <https://docs.docker.com/desktop/install/linux-install/>
@@ -50,28 +40,27 @@ You can see the most important files and it's locations in the diagram below. So
 
 Run `docker-compose up`
 
-## Run projects separeted
+## Run projects separated
 
 ### Run the mysql-db
 
-`npm run start:db` or  
-`docker-compose up mysql-db`
+`npm run start:db` or `docker-compose up mysql-db`
 
 ### Run the nestjs-app
 
-`npm run start:back` or  
-`docker-compose up nestjs-app`  
+`npm run start:back` or `docker-compose up nestjs-app`
 
 ### Run the nextjs-app
 
-`npm run start:front` or  
-`docker-compose up nextjs-app`
+`npm run start:front` or `docker-compose up nextjs-app`
 
-### Clean the database volume
+### Clean the database volume
 
 Run `npm run clean` or `docker-compose down -v`
 
-## Please ⭐ if it helped you
+## Credit
+
+The boilerplate for this technical question came from [GustavoContreiras/dockerized-full-stack-environment](https://github.com/GustavoContreiras/dockerized-full-stack-environment)
 
 ## Useful links
 
